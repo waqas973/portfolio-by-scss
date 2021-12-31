@@ -1,11 +1,14 @@
-@import 'config';
-@import 'home';
-@import 'menu';
-@import 'about';
-@import 'projects';
-@import 'contact';
-@import 'responsive';
+// imports
+@import "./config";
+@import "./home";
+@import "./menu";
+@import "./about";
+@import './projects';
+@import "./contact";
+@import "./responsive";
 
+
+// basic styles 
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -19,40 +22,36 @@ h1, h2, h3 {
 }
 
 a {
-  color: set-text-color($primary-color);
+   color: set-text-color($primary-color);
   text-decoration: none;
 }
-
 .text-secondary {
   color: $secondary-color;
 }
-
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 1rem;
+  // padding: 1rem;
 }
-
 main {
   height: 100%;
   width: 100%;
-
   .social-icons {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
 
     a {
-      padding: 0.4rem;
+      padding: 0.3rem;
       @include transition-ease;
-
       &:hover {
-        color: $secondary-color;
+       color: $secondary-color;
       }
     }
   }
 }
+
 
 footer {
   font-size: 1rem;
